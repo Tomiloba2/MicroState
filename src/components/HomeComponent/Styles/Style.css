@@ -1,0 +1,42 @@
+/*Carousel.jsx*/
+/*Carousel.jsx*/
+.slider-captio{
+    position:relative;
+    top:-15vw
+}
+.carousel-img{
+    width:100%;
+    height:60vh;
+    filter:brightness(0.5);
+}
+
+/*NewList.jsx*/
+/*NewList.jsx*/
+.NewList{
+    margin-top:2vw
+}
+/*Recommended.jsx*/
+/*Recommended.jsx*/
+.Recommended{
+    margin:5vw
+}
+.Latest{
+    background-image:url('https://media.istockphoto.com/photos/the-city-of-london-skyline-at-night-united-kingdom-picture-id1312550959?b=1&k=20&m=1312550959&s=170667a&w=0&h=RR30MGnFgyX2LnmvrffOsiaXkhB-oEuMkvtqu4JyVI0=');
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:60vh;
+    margin-top:2vw;
+    filter:brightness(0.9)
+}
+.latest-child{
+    color:white;
+    position:relative;
+    top:30%;
+}
+.learnMore{
+    margin:2vw;
+    width:25vw;
+    position:relative;
+    left:30%;
+}

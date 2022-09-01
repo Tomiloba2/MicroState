@@ -1,0 +1,20 @@
+/*Carousel.jsx*/
+.carousel-caption{
+    position:relative;
+    top:-15vw
+}
+.carousel-img{
+    width:100%;
+    height:60vh;
+    filter:brightness(0.5);
+}
+.carousel-h5{
+    font-family:algerian
+}
+/*More.jsx*/
+.agent{
+    border-radius: 50%;
+}
+.whatsapp-icon{
+    color:green
+}

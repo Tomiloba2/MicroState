@@ -1,0 +1,18 @@
+/*Footer.jsx*/
+.footer-col{
+    margin-top:1vw
+}
+.footer-li{
+    list-style:none
+}
+.fa-icons{
+    list-style:none;
+    display:inline-block;
+    padding:1vw;
+    margin-left:-1vw
+}
+.submit-button{
+    margin-left:40%;
+    margin-top:1vw;
+    margin-bottom:1vw
+}
