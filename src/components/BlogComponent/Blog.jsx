@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import {
     Row,
     Col,
@@ -9,7 +8,7 @@ import {Link} from 'react-router-dom'
 import './Styles/Style.css'
 
 const Blog = () => {
-    const [list,setList]=useState([
+    const list=[
         {
             'imgs':'https://media.istockphoto.com/photos/housing-development-under-construction-picture-id157284152?k=20&m=157284152&s=612x612&w=0&h=alOupcvMGyPlt3LjDazL6FA9BXvGstREbRGNjJG_aD0=',
             'h4':'How to avoid wastages when building'
@@ -26,7 +25,7 @@ const Blog = () => {
             'imgs':'https://media.istockphoto.com/photos/couple-and-builder-picture-id125142280?b=1&k=20&m=125142280&s=170667a&w=0&h=J1jbxjh_WQgFREnXL_cenZv1YV-hT_Ku-dPhu39K0gc=',
             'h4':'Designing the interior frame of your house '
         }
-    ])
+    ]
     return ( 
         <div className="Blog">
             <Container>
@@ -34,20 +33,20 @@ const Blog = () => {
                 <Row>
                     {list.map((lis,index)=>{
                         return(
-                          <Col key={index}  xs={12} sm={6} md={3}>
-                              <Card className='shadow'>
-                                  <Card.Img  src={lis.imgs} alt=""/>
+                          <Col key={index}  xs={12} md={6} lg={3}>
+                              <Card className='shadow blog-img mt-3 mb-3'>
+                                  <Card.Img  src={lis.imgs} alt="" className='blog-img'/>
                                   <Card.Body>
-                                    <h4>{lis.h4} </h4>
+                                    <h4><Link to='*'>{lis.h4}</Link> </h4>
                                   </Card.Body>
                               </Card>
                           </Col>  
                         )
                     })}
                 </Row>
-                <h5>
+                <h3>
                     <Link to='/blogs'>Read More</Link>
-                </h5>
+                </h3>
             </Container>
         </div>
      );

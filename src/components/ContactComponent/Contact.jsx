@@ -3,9 +3,10 @@ import {
     Col,
     Card,
     Container,
-    FormControl,
-    Button
 } from 'react-bootstrap'
+import Form from './ContactForm'
+import Maps from './Maps'
+import './Styles/Style.css'
 
 const Contacts = () => {
     const list=[
@@ -32,8 +33,8 @@ const Contacts = () => {
                 <Row>
                     {list.map((li,index)=>{
                         return(
-                                <Col xs={12} sm={4} md={4} key={index}>
-                                   <Card className='shadow text-center m-3 bg-light'>
+                                <Col xs={12} sm={12} md={4} key={index}>
+                                   <Card className='shadow text-center m-2 bg-light hoverable'>
                                        <Card.Title>
                                           <i className="material-icons text-primary m-3 h1">{li.icon} </i>
                                        </Card.Title>
@@ -52,36 +53,13 @@ const Contacts = () => {
             <section className='mt-5 mb-5'>
                 <Container>
                 <Row className='mt-5 mb-5'>
-                    <Col className='card shadow bg-secondary' xs={12} sm={6} md={6}>
+                    <Col className='card shadow bg-secondary m-1' xs={12} sm={12} md={5}>
                      <Container>
-                        <h1 className="text-center text-warning">Get in Touch</h1>
-                      <form action="#">
-                          <Row className='mt-5 mb-5'>
-                            <Col><FormControl placeholder='Name' type='text'/></Col>
-                            <Col><FormControl placeholder='Email Address' type='email'/></Col>
-                          </Row>
-                          <Row className='mt-5 mb-5'>
-                            <Col><FormControl placeholder='Phone Number' type='number'/></Col>
-                            <Col><FormControl placeholder='Subject' type='text'/></Col>
-                          </Row>
-                          <Row className='mt-5 mb-3'>
-                            <textarea rows={5} placeholder='Type in Your Comment'/>
-                          </Row>
-                          <Row>
-                            <Col xs={4}></Col>
-                            <Col xs={4} className='mt-3 mb-3'>
-                               <Button>
-                                  <i className="material-icons">send</i>
-                                  <span>send</span>
-                               </Button>
-                            </Col>
-                            <Col xs={4}></Col>
-                          </Row>
-                      </form>
+                           <Form/>
                       </Container>
                     </Col>
-                    <Col>
-                    map
+                    <Col  className='m-1' xs={12} sm={12} md={6}>
+                    <Maps/>
                     </Col>
                 </Row>
                 </Container>

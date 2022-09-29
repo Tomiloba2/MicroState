@@ -6,8 +6,8 @@ import './Styles/Style.css'
 const Footer = () => {
     return ( 
         <div>
-            <Row className='bg-dark text-light mr-2 ml-2'>
-                <Col xs={12} sm={6} md={3} className='container footer-col'>
+            <Row className='bg-dark text-light mr-2 ml-2 '>
+                <Col xs={12} md={6} lg={3} className='container footer-col mt-2 mb-2'>
                 <Container>
                     <h4 className='text-primary'>About Us</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -17,11 +17,11 @@ const Footer = () => {
                     </p>
                     </Container>
                 </Col>
-                <Col xs={12} sm={6} md={3}  className='text-center footer-col'>
+                <Col xs={12} md={6} lg={3}  className='text-center footer-col'>
                 <Container>
                     <h4 className='text-primary'>Menu</h4>
                     <ul>
-                        <li className='text-center footer-li '>
+                        <li className='text-center footer-li mt-2 mb-2'>
                             <a className='text-light' href="/">Home</a>
                         </li>
                         <li className='text-center footer-li '>
@@ -36,7 +36,7 @@ const Footer = () => {
                     </ul>
                     </Container>
                 </Col>
-                <Col xs={12} sm={6} md={3} className='text-center footer-col'>
+                <Col xs={12} md={6} lg={3} className='text-center footer-col mt-2 mb-2'>
                     <h4 className='text-primary'>Follow us</h4>
                     <ul>
                         <li className='fa-icons'>
@@ -53,7 +53,7 @@ const Footer = () => {
                                 <i className='fa fa-linkedin fa-2x text-light'></i></a></li>
                     </ul>
                 </Col>
-                <Col xs={12} sm={6} md={3}  className='footer-col'>
+                <Col xs={12} md={6} lg={3}  className='footer-col mt-2 mb-2'>
                 <Container>
                     <h4 className='text-primary'>News letter</h4>
                     <form action="#">

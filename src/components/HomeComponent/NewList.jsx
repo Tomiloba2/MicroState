@@ -10,7 +10,7 @@ import {
 import './Styles/Style.css'
 
 const NewList = () => {
-    const [list,setList]=useState([
+    const list=[
         {
             'imgs':'https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aG91c2VzJTIwZXh0ZXJpb3J8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
             "imgs2":"https://media.istockphoto.com/photos/modern-living-room-interior-3d-render-picture-id1373329869?b=1&k=20&m=1373329869&s=170667a&w=0&h=qAbThiOb5vvkl4MmI_hjJ6DXL9I21t1m4nNikEllLdc=",
@@ -52,7 +52,7 @@ const NewList = () => {
             'bath':'4',
             'living':'2'
         }
-    ])
+    ]
     const [index,setIndex]=useState(0)
     const HandleSelect=(selectedIndex,e)=>{
         setIndex(selectedIndex)
@@ -65,12 +65,12 @@ const NewList = () => {
                 <Row>
                     {list.map((lis,indx)=>{
                         return(
-                          <Col key={indx}  xs={12} sm={6} md={3} className='mt-2 mt-2'>
-                              <Card className='shadow'>
+                          <Col key={indx}  xs={12} md={6} xl={3} className='mt-2 mt-2'>
+                              <Card className='shadow text-center bs mt-3 mb-3'>
                                 <Carousel fade activeIndex={index} onSelect={HandleSelect}>
-                                    <Carousel.Item><Card.Img  src={lis.imgs} alt="img"/></Carousel.Item>
-                                    <Carousel.Item><Card.Img  src={lis.imgs2} alt="img"/></Carousel.Item>
-                                    <Carousel.Item><Card.Img  src={lis.imgs3} alt="img"/></Carousel.Item>
+                                    <Carousel.Item><Card.Img  src={lis.imgs} alt="img" className='bs'/></Carousel.Item>
+                                    <Carousel.Item><Card.Img  src={lis.imgs2} alt="img" className='bs'/></Carousel.Item>
+                                    <Carousel.Item><Card.Img  src={lis.imgs3} alt="img" className='bs'/></Carousel.Item>
                                 </Carousel>
                                   <Card.Body>
                                   <Row>
@@ -117,8 +117,8 @@ const NewList = () => {
                                         </Col>
                                     </Row>
                                     <Row className='mt-1'>
-                                        <Col><Button variant='secondary'>Request info</Button></Col>
-                                        <Col><Button>view details</Button></Col>
+                                        <Col><Button variant='secondary' className='hoverable'>Request info</Button></Col>
+                                        <Col><Button className='hoverable'>view details</Button></Col>
                                     </Row>
                                   </Card.Body>
                               </Card>

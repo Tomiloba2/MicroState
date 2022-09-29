@@ -1,0 +1,13 @@
+/*Contact.jsx*/
+.hoverable{
+    margin-top: 1vw !important;
+    transition: all ease-in-out 0.5s;
+}
+.hoverable:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+/*ContactForm.jsx*/
+.submit-Btn{
+    width: 120px;
+}

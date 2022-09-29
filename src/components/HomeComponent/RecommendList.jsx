@@ -8,7 +8,7 @@ import {
 } from 'react-bootstrap'
 import './Styles/Style.css'
 const RecommendList = () => {
-    const [list,setList]=useState([
+    const list=[
         {
             'imgs':'https://media.istockphoto.com/photos/3d-rendering-of-modern-cozy-chalet-in-night-picture-id1319018056?b=1&k=20&m=1319018056&s=170667a&w=0&h=3p6rd_ZedAlhll5QQ5Mv0LOeg542vimKV-YJTRGuzUk=',
             'imgs2':'https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bHV4dXJ5JTIwaG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60',
@@ -53,7 +53,7 @@ const RecommendList = () => {
             'bath':'4',
             'living':'2'
         }
-    ])
+    ]
     const [index,setIndex]=useState(0);
     const handleSelect=(selectedIndex,e)=>{
         setIndex(selectedIndex)
@@ -66,20 +66,20 @@ const RecommendList = () => {
                 <Row>
                     {list.map((lis,inx)=>{
                         return(
-                          <Col key={inx}  xs={12} sm={6} md={3} className='mt-2 mb-2'>
-                            <Card className='shadow'>
+                          <Col key={inx}  xs={12} md={6} xl={3} className='mt-2 mb-2'>
+                            <Card className='shadow bs  mt-3 mb-3'>
                             <Carousel fade activeIndex={index} onSelect={handleSelect}>
                                 <Carousel.Item>
-                                  <Card.Img  src={lis.imgs} alt="recommended listings"/>
+                                  <Card.Img  src={lis.imgs} alt="recommended listings" className='bs'/>
                                 </Carousel.Item>
                                 <Carousel.Item>
-                                  <Card.Img  src={lis.imgs2} alt="recommended listings"/>
+                                  <Card.Img  src={lis.imgs2} alt="recommended listings" className='bs'/>
                                 </Carousel.Item>
                                 <Carousel.Item>
-                                  <Card.Img  src={lis.imgs3} alt="recommended listings"/>
+                                  <Card.Img  src={lis.imgs3} alt="recommended listings" className='bs'/>
                                 </Carousel.Item>
                                 <Carousel.Item>
-                                  <Card.Img  src={lis.imgs4} alt="recommended listings"/>
+                                  <Card.Img  src={lis.imgs4} alt="recommended listings" className='bs'/>
                                 </Carousel.Item>
                             </Carousel>
                             <Card.Body>
@@ -127,8 +127,8 @@ const RecommendList = () => {
                                         </Col>
                                     </Row>
                                     <Row className='mt-1'>
-                                        <Col><Button variant='secondary'>Request info</Button></Col>
-                                        <Col><Button>view details</Button></Col>
+                                        <Col><Button variant='secondary' className='hoverable'>Request info</Button></Col>
+                                        <Col><Button className='hoverable'>view details</Button></Col>
                                     </Row>
                                  
                             </Card.Body>
@@ -138,13 +138,13 @@ const RecommendList = () => {
                     })}
                 </Row>
             </Container>
-            <div className="Latest">
+            <div className="Latest ">
                 <div className='latest-child'>
                     <h1 className='text-center'>
                     Want To Know The latest Trends?
                 </h1>
-                <p className='h4 text-center'>Get to know more about the world of real Estate</p>
-                <Button className='bg-primary learnMore'>Learn More</Button>
+                <p className='h4 text-center' >Get to know more about the world of real Estate</p>
+                <Button className='bg-warning text-primary h4 shadow learnMore'>Learn More</Button>
             </div>
                 </div>    
         </div>

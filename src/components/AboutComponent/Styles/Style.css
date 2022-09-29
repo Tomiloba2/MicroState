@@ -1,7 +1,7 @@
 /*Carousel.jsx*/
-.carousel-caption{
+.slider-caption{
     position:relative;
-    top:-15vw
+    top:25vw
 }
 .carousel-img{
     width:100%;
@@ -12,9 +12,24 @@
     font-family:algerian
 }
 /*More.jsx*/
-.agent{
-    border-radius: 50%;
-}
 .whatsapp-icon{
     color:green
+}
+.bs{
+    border-top-left-radius:5vw !important ;
+    border-bottom-right-radius:5vw !important ;
+}
+.hoverable{
+    margin-top: 1vw !important;
+    transition: all ease-in-out 0.25s;
+}
+.hoverable:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.get-started{
+    background-image: linear-gradient(gold,red,blue);
+    width:250px;
+    height:50px;
+    margin: 1vw;
 }

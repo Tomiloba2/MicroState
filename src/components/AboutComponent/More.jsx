@@ -5,7 +5,8 @@ import {
     Col,
     Card,
     Carousel,
-    Button
+    Button,
+    Accordion
 } from 'react-bootstrap'
 
 const More = () => {
@@ -40,24 +41,34 @@ const More = () => {
             <Container>
                 <section className='mt-5 mb-5'>
                     <Row>
-                        <Col xs={12} sm={6}>
-                           <img src="https://media.istockphoto.com/photos/a-young-aspiring-africanamerican-investor-works-at-a-computer-the-picture-id1307561130?b=1&k=20&m=1307561130&s=170667a&w=0&h=5MngLEWxVpQeJhU9m0VrfxO66mLVs_EgFWlY1XUzsS8=" alt="director" />
+                        <Col xs={12} md={6}>
+                           <img 
+                             src="https://media.istockphoto.com/photos/a-young-aspiring-africanamerican-investor-works-at-a-computer-the-picture-id1307561130?b=1&k=20&m=1307561130&s=170667a&w=0&h=5MngLEWxVpQeJhU9m0VrfxO66mLVs_EgFWlY1XUzsS8="
+                             alt="director"
+                             className='img-fluid' />
                         </Col>
-                        <Col xs={12} sm={6}>
-                          <Card className='shadow'>
+                        <Col xs={12} md={6}>
+                          <Card className='shadow mt-2'>
                              <Card.Header className='p-3'>
                                  <h1>Who we are ?</h1>
                              </Card.Header>
                              <Card.Body>
-                                      <h5>We are the best when it comes to real estate investment</h5><br /><br />
+                                      <h5>We are the best when it comes to real estate investment</h5><br />
                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                                           delectus voluptatum et maiores porro aut eligendi? Dignum
                                          temporibus velit. Officia minus impedit suscipit qua autem.
                                      </p>
-                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                          delectus voluptatum et maiores porro aut eligendi? Dignum
-                                         temporibus velit. Officia minus impedit suscipit qua autem.
-                                     </p>
+                                     <Accordion defaultActiveKey='0'>
+                                     <Accordion.Item eventKey='1'>
+                                        <Accordion.Header>Learn more</Accordion.Header>
+                                          <Accordion.Body>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                              delectus voluptatum et maiores porro aut eligendi? Dignum
+                                              temporibus velit. Officia minus impedit suscipit qua autem.
+                                              </p>
+                                        </Accordion.Body>
+                                        </Accordion.Item>
+                                     </Accordion>
                              </Card.Body>
                           </Card>
                         </Col>
@@ -66,7 +77,7 @@ const More = () => {
                 {/*next section*/}
                 <section className='mt-5 mb-5'>
                     <Row>
-                        <Col xs={12} sm={6}>
+                        <Col xs={12} md={6}>
                           <Card className='shadow'>
                              <Card.Header>
                                  <h1>Why Choose Us ?</h1>
@@ -84,9 +95,9 @@ const More = () => {
                              </Card.Body>
                           </Card>
                         </Col>
-                        <Col xs={12} sm={5}>
+                        <Col xs={12} md={6}>
                            <img src="https://media.istockphoto.com/photos/home-for-sale-real-estate-sign-picture-id1135238224?b=1&k=20&m=1135238224&s=170667a&w=0&h=xRFFC5YgP_UaW3BjePC4zreSJbev977c240FmxewC7w="
-                             className='shadow-lg'
+                             className='shadow-lg img-fluid mt-3'
                              alt="director" />
                         </Col>
                     </Row>
@@ -96,14 +107,14 @@ const More = () => {
                      <Row>
                         {list.map((lis,index)=>{
                             return(
-                                <Col xs={12} sm={6} md={3} key={index}>
-                            <Card className='shadow mt-1 mb-4'>
+                                <Col xs={12} sm={6} lg={3}  key={index}>
+                            <Card className='shadow mt-1 mb-4 hoverable'>
                                 <Card.Header>
                                     <Row>
                                         <Col xs={9}><i className="material-icons text-primary h4">email</i></Col>
                                         <Col xs={3} className=''><i className="material-icons text-primary h4">email</i></Col>
                                     </Row>
-                                    <Card.Img src={lis.img} alt="agent" className='center agent' style={{
+                                    <Card.Img src={lis.img} alt="agent" className='center  bs' style={{
                                         borderRadius:'50%'
                                     }}/>
                                     <Card.Title className='text-center'>
@@ -136,7 +147,7 @@ const More = () => {
                 <section>
                    <section className='mt-5 mb-5'>
                        <Row>
-                           <Col xs={12} sm={6}>
+                           <Col xs={12} sm={12} md={6}>
                              <Card className='shadow'>
                                 <Card.Header>
                                    <Card.Title>
@@ -158,8 +169,8 @@ const More = () => {
                              </Card.Body>
                           </Card>
                         </Col>
-                        <Col xs={12} sm={5}>
-                        <Card className='shadow'>
+                        <Col xs={12} sm={12} md={6}>
+                        <Card className='shadow mt-3'>
                             <Carousel fade activeIndex={index} onSelect={handleSelect}>
                                 <Carousel.Item className='shadow'>
                                   <Card.Img  src="https://images.unsplash.com/photo-1505843513577-22bb7d21e455?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bHV4dXJ5JTIwaG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" 

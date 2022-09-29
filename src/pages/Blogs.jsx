@@ -1,15 +1,14 @@
-import { useState } from 'react';
 import {
     Row,
     Col,
     Container,
     Card
 } from 'react-bootstrap'
-
+import {Link} from 'react-router-dom'
 
 
 const Blogs = () => {
-    const [list,setList]=useState([
+    const list=[
         {
             'imgs':'https://media.istockphoto.com/photos/housing-development-under-construction-picture-id157284152?k=20&m=157284152&s=612x612&w=0&h=alOupcvMGyPlt3LjDazL6FA9BXvGstREbRGNjJG_aD0=',
             'h4':'How to avoid wastages when building'
@@ -58,7 +57,7 @@ const Blogs = () => {
             'imgs':'https://media.istockphoto.com/photos/house-placed-on-coins-mens-hand-is-planning-savings-money-of-coins-to-picture-id1057067420?b=1&k=20&m=1057067420&s=170667a&w=0&h=Bc57an0dEouvrnMwed35TfGaC8pObmNA4Q9SOSK0Z3o=',
             'h4':'Picking The right color for you house '
         }
-    ])
+    ]
     return ( 
         <div className="Blogs" style={{
             margin:'2vw'
@@ -68,11 +67,11 @@ const Blogs = () => {
                 <Row>
                     {list.map((lis,index)=>{
                         return(
-                          <Col key={index}  xs={12} sm={6} md={3}>
-                              <Card className='shadow'>
-                                  <Card.Img  src={lis.imgs} alt=""/>
+                          <Col key={index}  xs={12} sm={12} md={6} lg={4} className='mt-4 mb-4 hoverable'>
+                              <Card className='shadow blog-img'>
+                                  <Card.Img  src={lis.imgs} alt="" className='blog-img'/>
                                   <Card.Body>
-                                    <h4>{lis.h4} </h4>
+                                    <h4><Link to='*'>{lis.h4}</Link> </h4>
                                   </Card.Body>
                               </Card>
                           </Col>  

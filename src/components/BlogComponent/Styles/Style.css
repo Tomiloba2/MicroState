@@ -2,3 +2,7 @@
 .Blog{
     margin:2vw
 }
+.blog-img{
+    border-top-left-radius:5vw !important ;
+    border-bottom-right-radius:5vw !important ;
+}

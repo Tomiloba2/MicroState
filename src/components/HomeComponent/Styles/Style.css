@@ -1,6 +1,6 @@
 /*Carousel.jsx*/
 /*Carousel.jsx*/
-.slider-captio{
+.slider-caption{
     position:relative;
     top:-15vw
 }
@@ -9,11 +9,31 @@
     height:60vh;
     filter:brightness(0.5);
 }
-
+.get-started{
+    background-image: linear-gradient(gold,red,blue);
+    width:250px;
+    height:50px;
+    margin: 1vw;
+}
 /*NewList.jsx*/
 /*NewList.jsx*/
 .NewList{
     margin-top:2vw
+}
+.bs{
+    border-top-left-radius:5vw !important ;
+    border-bottom-right-radius:5vw !important ;
+}
+.cp{
+    border-bottom-left-radius:9vw !important ;
+    border-top-right-radius:9vw !important ;  
+}
+.hoverable{
+    margin-top: 1vw !important;
+    transition: all ease-in-out 0.25s;
+}
+.hoverable:hover{
+    cursor: pointer;
 }
 /*Recommended.jsx*/
 /*Recommended.jsx*/
