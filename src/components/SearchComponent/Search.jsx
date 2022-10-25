@@ -8,7 +8,7 @@ import { useState } from "react";
 
 const SearchP = () => {
     const [search,setSearch]=useState('')
-    const handleSearch=(e)=>{
+    /*const handleSearch=(e)=>{
         e.preventDefault()
         const query=e.target.value
         const newlists=[...lists]
@@ -18,7 +18,7 @@ const SearchP = () => {
             )
         })
         setSearch(newlists)
-    }
+    }*/
     return ( 
         <div className="SearchP">
             <section>

@@ -269,7 +269,6 @@ const lists=[
         'bedroom':"2",
         'sittingroom':'1'
     },
-    ,
     {
         'id':31,
         'img':"https://media.istockphoto.com/photos/black-living-room-interior-with-leather-sofa-minimalist-industrial-picture-id1344243415?b=1&k=20&m=1344243415&s=170667a&w=0&h=JE0Y9iyBBwIPadsAf_P9VbYWxe1tdCuRvu0l6isU9FQ=",

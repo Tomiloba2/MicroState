@@ -138,7 +138,7 @@ const More = () => {
             <section className='bg-light'>
                 <div className='container text-center h4 text-dark'>
                     What are you waiting for ? <br />Whatsapp us &nbsp;
-                      <a href="#">
+                      <a href="/*">
                           <i className='fa fa-whatsapp fa-2x whatsapp-icon'></i>
                       </a>&nbsp;&nbsp;<span className='text-dark'>08077899765</span>
                 </div>

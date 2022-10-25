@@ -9,6 +9,7 @@ const Maps = () => {
                 <div>{coordinates.address}</div>
     </GoogleMapReact>*/}
     <iframe 
+    title='one mission school'
     src="https://maps.google.com/maps?width=600&amp;height=1978&amp;hl=en&amp;q=wisdom estate Oyo state Nigeria&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" 
     frameborder="0"
     className="w-100"
