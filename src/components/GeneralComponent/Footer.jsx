@@ -2,6 +2,7 @@ import {
     Row,Col,FormControl, Button, Container
 } from 'react-bootstrap'
 import './Styles/Style.css'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return ( 
@@ -22,16 +23,19 @@ const Footer = () => {
                     <h4 className='text-primary'>Menu</h4>
                     <ul>
                         <li className='text-center footer-li mt-2 mb-2'>
-                            <a className='text-light' href="/">Home</a>
+                            <Link className='text-light' to="/">Home</Link>
                         </li>
                         <li className='text-center footer-li '>
-                            <a className='text-light' href="/search">Search</a>
+                            <Link className='text-light' to="/about">About</Link>
                         </li>
                         <li className='text-center footer-li '>
-                            <a className='text-light' href="/blogs">Blogs</a>
+                            <Link className='text-light' to="/search">Search</Link>
                         </li>
                         <li className='text-center footer-li '>
-                            <a className='text-light' href="/contact">Contact</a>
+                            <Link className='text-light' to="/blogs">Blogs</Link>
+                        </li>
+                        <li className='text-center footer-li '>
+                            <Link className='text-light' to="/contact">Contact</Link>
                         </li>
                     </ul>
                     </Container>
@@ -40,16 +44,16 @@ const Footer = () => {
                     <h4 className='text-primary'>Follow us</h4>
                     <ul>
                         <li className='fa-icons'>
-                                <a href="#">
+                                <a href="/*">
                                 <i className='fa fa-facebook fa-2x text-light'></i></a></li>
                         <li className='fa-icons'>
-                                <a href="#">
+                                <a href="*">
                                 <i className='fa fa-twitter fa-2x text-light'></i></a></li>
                         <li className='fa-icons'>
-                                <a href="#">
+                                <a href="*">
                                 <i className='fa fa-instagram fa-2x text-light'></i></a></li>
                         <li className='fa-icons'>
-                                <a href="#">
+                                <a href="*">
                                 <i className='fa fa-linkedin fa-2x text-light'></i></a></li>
                     </ul>
                 </Col>

@@ -3,6 +3,7 @@ import {
     Carousel
 } from "react-bootstrap"
 import './Styles/Style.css'
+import { Link } from "react-router-dom";
 
 const Slider = () => {
     const [index,setIndex]=useState(0)
@@ -30,7 +31,7 @@ const Slider = () => {
                         <p>
                            harum facere officiis laudantium dolorum, doloribus aperiam fugit, ipsa aut provident voluptatibus quos?
                         </p>
-                        <a href="/search" className="btn get-started btn-large text-light h2">Get started</a>
+                        <Link to="/search" className="btn get-started btn-large text-light h2">Get started</Link>
                         </div>
                         </div>
                     </Carousel.Caption>
@@ -46,7 +47,7 @@ const Slider = () => {
                             <p>
                            harum facere officiis laudantium dolorum, doloribus aperiam fugit, ipsa aut provident voluptatibus quos?
                         </p>
-                        <a href="/search" className="btn get-started btn-large text-light h2">Get started</a>
+                        <Link to="/search" className="btn get-started btn-large text-light h2">Get started</Link>
                             </div>
                         </div>
                     </Carousel.Caption>
@@ -61,7 +62,7 @@ const Slider = () => {
                             <p>
                            harum facere officiis laudantium dolorum, doloribus aperiam fugit, ipsa aut provident voluptatibus quos?
                         </p>
-                        <a href="/search" className="btn get-started btn-large text-light h2">Get started</a>
+                        <Link to="/search" className="btn get-started btn-large text-light h2">Get started</Link>
                             </div>
                         </div>
                     </Carousel.Caption>
